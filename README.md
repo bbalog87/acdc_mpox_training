@@ -10,7 +10,7 @@ It is designed for capacity building in genomic epidemiology and public health.
 - Support for **multi-country Mpox datasets**
 - Integration of **Nextclade QC**, **MAFFT alignment**, **FastTree/IQ-TREE**, and **Auspice visualization**
 - Clean repo structure for **teaching and reproducibility**
-- Compatible with **conda/mamba environment** (`env/environment.yml`)
+- Compatible with **conda/mamba environment** (`env/mpox_ns.yml`)
 
 ---
 
@@ -27,8 +27,8 @@ It is designed for capacity building in genomic epidemiology and public health.
 ## 🚀 Quickstart
 ```bash
 # 1. Create environment
-mamba env create -f env/environment.yml
-mamba activate nextstrain
+mamba env create -f env/mpox_ns.yml
+mamba activate mpox_ns
 
 # 2. Run pipeline
 bash scripts/run_nextstrain_mpx.sh

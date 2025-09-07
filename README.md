@@ -24,7 +24,20 @@ It is designed for capacity building in genomic epidemiology and public health.
 
 ---
 
-## 🚀 Quickstart
+
+## Getting Started
+
+### Step 0 — Build the folder layout
+First, set up the project directory structure by running the script below.  
+This will create all necessary folders (`data/`, `config/`, `builds/`, `env/`) for the workflow.
+
+```bash
+bash scripts/create_mpx_nextstrain_structure.sh
+```
+
+
+
+
 ```bash
 # 1. Create environment
 mamba env create -f env/mpox_ns.yml

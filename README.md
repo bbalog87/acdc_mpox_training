@@ -20,6 +20,37 @@ This repository provides a **step-by-step, hands-on training workflow** for buil
 - `builds/` → auto-generated results (ignored in git)  
 - `docs/` → slides, diagrams, teaching notes  
 - `env/` → reproducible conda environment  
+### Project  Directory Structure
+```
+mpx-nextstrain-training/
+├── README.md
+├── LICENSE
+├── data/
+│   ├── genomes/              # input FASTA sequences
+│   ├── metadata.tsv          # required sample metadata
+│   └── exclude.txt           # list of excluded samples
+├── config/
+│   ├── colors.tsv            # color scheme for Auspice
+│   └── auspice_config.json   # Auspice display config
+├── builds/                   # output directory (ignored in git)
+│   └── mpx_africa/
+│       ├── qc/               # Nextclade outputs
+│       ├── align/            # alignment files
+│       ├── tree/             # tree files & node data
+│       ├── auspice/          # JSON for visualization
+│       └── report/           # PNGs, methods, logs
+├── scripts/
+│   ├── run_nextstrain_mpx.sh # end-to-end Bash pipeline
+│   └── utils/                # helper scripts (QC filters, env setup)
+├── docs/
+│   ├── slides/               # training slides (PDF/PowerPoint)
+│   ├── workflow_diagram.png  # visual schematic
+│   └── notes.md              # teaching notes
+├── env/
+│   └── environment.yml       # conda/mamba environment
+└── .gitignore
+
+```
 
 ---
 

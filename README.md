@@ -1,7 +1,6 @@
 # Mpox Nextstrain Training Workflow
 
-This repository provides a **step-by-step, hands-on training workflow** for building a Nextstrain phylogenetic analysis of Monkeypox (Mpox) genomes.  
-It is designed for capacity building in genomic epidemiology and public health.
+This repository provides a **step-by-step, hands-on training workflow** for building a Nextstrain phylogenetic analysis of Monkeypox (Mpox) genomes. It is designed for capacity building in genomic epidemiology and public health.
 
 ---
 

@@ -34,13 +34,11 @@ This will create all necessary folders (`data/`, `config/`, `builds/`, `env/`) f
 bash scripts/create_mpx_nextstrain_structure.sh
 ```
 
-
-
-
+### Step 1 — Create environment
 ```bash
-# 1. Create environment
 mamba env create -f env/mpox_ns.yml
 mamba activate mpox_ns
+```
 
 # 2. Run pipeline
 bash scripts/run_nextstrain_mpx.sh

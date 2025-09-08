@@ -71,6 +71,48 @@ mamba env create -f env/mpox_ns.yml
 mamba activate mpox_ns
 ```
 
+Alternative ylou you can creat an enviroment from scratch:
+
+#### 0) Create new environment and pin Python 3.11 (stable with all packages):
+
+```
+mamba create -n mpox_ns -c conda-forge -c bioconda -y python=3.11
+mamba activate mpox_ns
+
+```
+
+#### 1) Use the right channels (strict solves many headaches)
+```
+conda config --env --add channels conda-forge
+conda config --env --add channels bioconda
+conda config --env --set channel_priority strict
+```
+
+#### 2) Install Nextstrain CLI + tools commonly used in Mpox builds
+```
+mamba install \
+  nextstrain-cli=10.2.1.post1 \
+  augur \
+  auspice \
+  nextclade=3.16.0 \
+  nextalign \
+  mafft \
+  iqtree \
+  fasttree \
+  gofasta \
+  seqkit \
+  curl \
+  git
+```
+
+#### 3) Quick sanity check
+```
+nextstrain version
+augur --version
+auspice --version
+nextclade --version
+```
+
 # 2. Run pipeline
 bash scripts/run_nextstrain_mpx.sh
 
